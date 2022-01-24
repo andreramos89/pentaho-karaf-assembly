@@ -88,15 +88,17 @@
 
     <!-- Karaf framework startup bundles' versions -->
     <!-- karaf.version is in parent POM -->
-    <hv-patched-karaf-features-extension.version>${karaf.version}-R1</hv-patched-karaf-features-extension.version>
+    <hv-patched-karaf-features-extension.version>${karaf.version}</hv-patched-karaf-features-extension.version>
     <!-- pax-url-aether.version is in parent POM -->
-    <felix.metatype.version>1.2.2</felix.metatype.version>
+    <felix.metatype.version>1.2.4</felix.metatype.version>
     <jansi.version>1.18</jansi.version>
-    <pax-logging.version>1.10.9</pax-logging.version>
+    <pax-logging.version>1.11.13</pax-logging.version>
     <felix.coordinator.version>1.0.2</felix.coordinator.version>
-    <felix.configadmin.version>1.9.14</felix.configadmin.version>
-    <felix.fileinstall.version>3.6.4</felix.fileinstall.version>
+    <felix.configadmin.version>1.9.22</felix.configadmin.version>
+    <felix.fileinstall.version>3.7.4</felix.fileinstall.version>
     <servicemix-spec.version>2.9.0</servicemix-spec.version>
+    <org.osgi.util.function.version>1.1.0</org.osgi.util.function.version>
+    <org.osgi.util.promise.version>1.1.1</org.osgi.util.promise.version>
   </properties>
 
   <dependencyManagement>
@@ -113,6 +115,41 @@
         <classifier>features</classifier>
         <version>${karaf.version}</version>
         <type>xml</type>
+        <scope>runtime</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.hitachivantara.karaf.features</groupId>
+        <artifactId>org.hitachivantara.karaf.features.extension</artifactId>
+        <version>${karaf.version}</version>
+        <type>jar</type>
+        <scope>runtime</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
+        <version>${log4j.version}</version>
+        <type>jar</type>
+        <scope>runtime</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-api</artifactId>
+        <version>${log4j.version}</version>
+        <type>jar</type>
+        <scope>runtime</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-slf4j-impl</artifactId>
+        <version>${log4j.version}</version>
+        <type>jar</type>
+        <scope>runtime</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-1.2-api</artifactId>
+        <version>${log4j.version}</version>
+        <type>jar</type>
         <scope>runtime</scope>
       </dependency>
       <dependency>
