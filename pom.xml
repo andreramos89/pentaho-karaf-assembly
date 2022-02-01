@@ -61,7 +61,7 @@
     <pentaho-mongodb-plugin.version>9.3.0.0-SNAPSHOT</pentaho-mongodb-plugin.version>
     <com.github.zafarkhaja.version>0.9.0</com.github.zafarkhaja.version>
     <json.simple.version>1.1.1</json.simple.version>
-    <commons.io.version>2.4</commons.io.version>
+    <commons.io.version>2.7</commons.io.version>
     <net.sf.ehcache.version>2.8.3</net.sf.ehcache.version>
     <net.java.dev.jna.version>4.4.0</net.java.dev.jna.version>
     <icu4j.version>54.1.1</icu4j.version>
@@ -99,6 +99,7 @@
     <servicemix-spec.version>2.9.0</servicemix-spec.version>
     <org.osgi.util.function.version>1.1.0</org.osgi.util.function.version>
     <org.osgi.util.promise.version>1.1.1</org.osgi.util.promise.version>
+    <org.osgi.service.log.version>1.3.0</org.osgi.service.log.version>
   </properties>
 
   <dependencyManagement>

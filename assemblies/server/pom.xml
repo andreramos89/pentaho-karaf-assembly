@@ -26,6 +26,12 @@
       <type>xml</type>
     </dependency>
     <dependency>
+      <groupId>org.hitachivantara.karaf.features</groupId>
+      <artifactId>org.hitachivantara.karaf.features.extension</artifactId>
+      <type>jar</type>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
       <groupId>org.apache.karaf.features</groupId>
       <artifactId>enterprise</artifactId>
       <classifier>features</classifier>
