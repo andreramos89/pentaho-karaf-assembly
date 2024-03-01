@@ -93,6 +93,10 @@
             originalUri="mvn:commons-io/commons-io/[,2.11.0)"
             replacement="mvn:commons-io/commons-io/${commons-io.version}" mode="maven" />
 
+        <bundle
+            originalUri="mvn:org.yaml/snakeyaml/[1,2)"
+            replacement="mvn:com.konloch/safeyaml/${safeyaml.version}" mode="maven" />
+
     </bundleReplacements>
 
     <!-- A list of feature replacements that allows changing external feature definitions -->
